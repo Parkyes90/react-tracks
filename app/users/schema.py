@@ -20,6 +20,7 @@ class Query(graphene.ObjectType):
         user = info.context.user
         if user.is_anonymous:
             raise GraphQLError('Not logged in!')
+
         return user
 
 
@@ -32,8 +33,12 @@ class CreateUser(graphene.Mutation):
         email = graphene.String(required=True)
 
     def mutate(self, info, username, password, email):
-        user = get_user_model().create_user(
-            username=username, email=email, password=password)
+        user = get_user_model()(
+            username=username,
+            email=email
+        )
+        user.set_password(password)
+        user.save()
         return CreateUser(user=user)
 
 

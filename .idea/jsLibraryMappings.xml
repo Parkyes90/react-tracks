@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/enzyme, @types/expo, @types/extjs, @types/jest, @types/json-js, @types/koa, @types/koa-router, @types/mongoose, @types/node, @types/react, @types/react-redux, @types/react-redux-i18n, @types/react-router-dom, @types/react-router-redux, @types/redux-devtools, @types/webpack}" />
+  </component>
+</project>

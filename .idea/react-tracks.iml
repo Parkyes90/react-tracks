@@ -18,6 +18,22 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (react-tracks-OWc7d-Xd)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/enzyme" level="application" />
+    <orderEntry type="library" name="@types/expo" level="application" />
+    <orderEntry type="library" name="@types/extjs" level="application" />
+    <orderEntry type="library" name="@types/jest" level="application" />
+    <orderEntry type="library" name="@types/json-js" level="application" />
+    <orderEntry type="library" name="@types/koa" level="application" />
+    <orderEntry type="library" name="@types/koa-router" level="application" />
+    <orderEntry type="library" name="@types/mongoose" level="application" />
+    <orderEntry type="library" name="@types/node" level="application" />
+    <orderEntry type="library" name="@types/react" level="application" />
+    <orderEntry type="library" name="@types/react-redux" level="application" />
+    <orderEntry type="library" name="@types/react-redux-i18n" level="application" />
+    <orderEntry type="library" name="@types/react-router-dom" level="application" />
+    <orderEntry type="library" name="@types/react-router-redux" level="application" />
+    <orderEntry type="library" name="@types/redux-devtools" level="application" />
+    <orderEntry type="library" name="@types/webpack" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
