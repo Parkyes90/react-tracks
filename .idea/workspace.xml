@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f904cb8d-03bb-4de8-bbdf-f183885b9a51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-tracks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-tracks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/users/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-tracks-client/src/Root.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-tracks-client/src/Root.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-tracks-client/src/components/Auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-tracks-client/src/components/Auth/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-tracks-client/src/components/Auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-tracks-client/src/components/Auth/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react-tracks-client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-tracks-client/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="f904cb8d-03bb-4de8-bbdf-f183885b9a51" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-tracks-client/src/components/Auth/Register.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
@@ -57,6 +45,15 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2970">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -134,7 +131,7 @@
         <option value="parkyes90 &lt;parkyes90@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/react-tracks-client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -198,35 +195,6 @@
             </path>
             <path>
               <item name="react-tracks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-tracks" type="462c0819:PsiDirectoryNode" />
-              <item name="react-tracks-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-tracks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-tracks" type="462c0819:PsiDirectoryNode" />
-              <item name="react-tracks-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-tracks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-tracks" type="462c0819:PsiDirectoryNode" />
-              <item name="react-tracks-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-tracks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-tracks" type="462c0819:PsiDirectoryNode" />
-              <item name="react-tracks-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Track" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-tracks" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraphQL Schemas" type="390a5855:JSGraphQLSchemaDirectoryNode" />
             </path>
           </expand>
@@ -243,7 +211,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -311,7 +279,7 @@
       <workItem from="1554966344192" duration="7851000" />
       <workItem from="1555058538591" duration="822000" />
       <workItem from="1555286762604" duration="2283000" />
-      <workItem from="1555311857681" duration="4926000" />
+      <workItem from="1555311857681" duration="5072000" />
     </task>
     <task id="LOCAL-00001" summary="add backend">
       <created>1554974749042</created>
@@ -320,23 +288,29 @@
       <option name="project" value="LOCAL" />
       <updated>1554974749042</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add register page">
+      <created>1555318123124</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555318123125</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16190000" />
+    <option name="totallyTimeSpent" value="16336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26260388" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26260388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="GraphQL" weight="0.32930845" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32930845" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32930845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,7 +319,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32930845" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32930845" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32930845" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -358,8 +332,12 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/react-tracks-client" />
+    </ignored-roots>
     <MESSAGE value="add backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="add backend" />
+    <MESSAGE value="add register page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add register page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Pipfile">
@@ -372,13 +350,6 @@
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -512,6 +483,13 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2970">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
