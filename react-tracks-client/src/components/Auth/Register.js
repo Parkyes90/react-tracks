@@ -17,6 +17,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import Gavel from "@material-ui/icons/Gavel";
 import VerifiedUserTwoTone from "@material-ui/icons/VerifiedUserTwoTone";
+import Error from "../Shared/Error";
 
 function Transition(props) {
   return <Slide direction="up" {...props} />;
@@ -46,14 +47,14 @@ const Register = ({ classes, setNewUser }) => {
           variables={{ username, email, password }}
           onCompleted={data => {
             console.log({ data });
-             setOpen(true);
+            setOpen(true);
           }}
         >
           {(createUser, { loading, error }) => {
             return (
               <form
-                className={classes.form}
                 onSubmit={event => handleSubmit(event, createUser)}
+                className={classes.form}
               >
                 <FormControl margin="normal" required fullWidth>
                   <InputLabel htmlFor="username">Username</InputLabel>
@@ -82,29 +83,38 @@ const Register = ({ classes, setNewUser }) => {
                   type="submit"
                   fullWidth
                   variant="contained"
+                  color="secondary"
                   disabled={
                     loading ||
                     !username.trim() ||
                     !email.trim() ||
                     !password.trim()
                   }
-                  color="secondary"
                   className={classes.submit}
                 >
-                  {loading ? "Registering...." : "Register"}
+                  {loading ? "Registering..." : "Register"}
                 </Button>
-                <Button color="primary" variant="outlined" fullWidth onClick={() => setNewUser(false)}>
+                <Button
+                  onClick={() => setNewUser(false)}
+                  color="primary"
+                  variant="outlined"
+                  fullWidth
+                >
                   Previous user? Log in here
                 </Button>
-                {error && <div>Error</div>}
+
+                {/* Error Handling */}
+                {error && <Error error={error} />}
               </form>
             );
           }}
         </Mutation>
       </Paper>
+
+      {/* Success Dialog */}
       <Dialog
-        disableBackdropClick={true}
         open={open}
+        disableBackdropClick={true}
         TransitionComponent={Transition}
       >
         <DialogTitle>
@@ -127,7 +137,6 @@ const Register = ({ classes, setNewUser }) => {
     </div>
   );
 };
-
 const REGISTER_MUTATION = gql`
   mutation($username: String!, $email: String!, $password: String!) {
     createUser(username: $username, email: $email, password: $password) {
