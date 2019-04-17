@@ -5,7 +5,7 @@ import Login from "./Login";
 import Register from "./Register";
 
 export default withRoot(() => {
-  const [newUser, setNewUser] = useState(true);
+  const [newUser, setNewUser] = useState(false);
   return newUser ? (
     <Register setNewUser={setNewUser} />
   ) : (
