@@ -14,7 +14,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AudioPlayer from "../Shared/AudioPlayer";
 import LikeTrack from "./LikeTrack";
 import UpdateTrack from "./UpdateTrack";
-import DeleteTrack from './DeleteTrack';
+import DeleteTrack from "./DeleteTrack";
 
 const TrackList = ({ classes, tracks }) => (
   <List>
@@ -42,9 +42,7 @@ const TrackList = ({ classes, tracks }) => (
           </ListItem>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails className={classes.detail}>
-          <Typography variant="body1">
-            {track.description}
-          </Typography>
+          <Typography variant="body1">{track.description}</Typography>
         </ExpansionPanelDetails>
         <ExpansionPanelActions>
           <UpdateTrack />

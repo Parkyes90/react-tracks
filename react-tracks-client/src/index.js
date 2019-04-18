@@ -18,12 +18,12 @@ const client = new ApolloClient({
     credentials: "include"
   },
   request: operation => {
-    const token = localStorage.getItem('authToken') || "";
+    const token = localStorage.getItem("authToken") || "";
     operation.setContext({
       headers: {
         Authorization: `JWT ${token}`
       }
-    })
+    });
   },
   connectToDevTools: true
 });
