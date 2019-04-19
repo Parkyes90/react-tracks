@@ -10,6 +10,17 @@ import { UserContext } from "../../Root";
 const DeleteTrack = ({ track }) => {
   const currentUser = useContext(UserContext);
   const isCurrentUser = currentUser.id === track.postedBy.id;
+  const handleUpdateCache = (cache, { data: { deleteTrack } }) => {
+    const data = cache.readQuery({ query: GET_TRACKS_QUERY });
+    const index = data.tracks.findIndex(
+      track => Number(track.id) === deleteTrack.trackId
+    );
+    const tracks = [
+      ...data.tracks.slice(0, index),
+      ...data.tracks.slice(index + 1)
+    ];
+    cache.writeQuery({ query: GET_TRACKS_QUERY, data: { tracks } });
+  };
   return (
     isCurrentUser && (
       <Mutation
@@ -18,7 +29,8 @@ const DeleteTrack = ({ track }) => {
         onCompleted={data => {
           console.log({ data });
         }}
-        refetchQueries={() => [{ query: GET_TRACKS_QUERY }]}
+        // refetchQueries={() => [{ query: GET_TRACKS_QUERY }]}
+        update={handleUpdateCache}
       >
         {deleteTrack => (
           <IconButton onClick={deleteTrack}>
