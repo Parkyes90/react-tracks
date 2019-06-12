@@ -1,0 +1,110 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type CreateLike {
+    track: TrackType
+    user: UserType
+}
+
+type CreateTrack {
+    track: TrackType
+}
+
+type CreateUser {
+    user: UserType
+}
+
+type DeleteTrack {
+    trackId: Int
+}
+
+type LikeType {
+    id: ID!
+    track: TrackType!
+    user: UserType
+}
+
+type Mutation {
+    createLike(trackId: Int!): CreateLike
+    createTrack(description: String, title: String, url: String): CreateTrack
+    createUser(email: String!, password: String!, username: String!): CreateUser
+    deleteTrack(trackId: Int!): DeleteTrack
+    refreshToken(token: String!): Refresh
+    tokenAuth(password: String!, username: String!): ObtainJSONWebToken
+    updateTrack(description: String, title: String, trackId: Int!, url: String): UpdateTrack
+    verifyToken(token: String!): Verify
+}
+
+"Obtain JSON Web Token mutation"
+type ObtainJSONWebToken {
+    token: String
+}
+
+type Query {
+    likes: [LikeType]
+    me: UserType
+    tracks(search: String): [TrackType]
+    user(id: Int!): UserType
+}
+
+type Refresh {
+    payload: GenericScalar
+    token: String
+}
+
+type TrackType {
+    createdAt: DateTime!
+    description: String!
+    id: ID!
+    likes: [LikeType]
+    postedBy: UserType
+    title: String!
+    url: String!
+}
+
+type UpdateTrack {
+    track: TrackType
+}
+
+type UserType {
+    dateJoined: DateTime!
+    email: String!
+    firstName: String!
+    id: ID!
+    "Designates whether this user should be treated as active. Unselect this instead of deleting accounts."
+    isActive: Boolean!
+    "Designates whether the user can log into this admin site."
+    isStaff: Boolean!
+    "Designates that this user has all permissions without explicitly assigning them."
+    isSuperuser: Boolean!
+    lastLogin: DateTime
+    lastName: String!
+    likeSet: [LikeType]
+    password: String!
+    trackSet: [TrackType]
+    "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+    username: String!
+}
+
+type Verify {
+    payload: GenericScalar
+}
+
+
+"""
+The `DateTime` scalar type represents a DateTime
+value as specified by
+[iso8601](https://en.wikipedia.org/wiki/ISO_8601).
+"""
+scalar DateTime
+
+"""
+The `GenericScalar` scalar type represents a generic
+GraphQL scalar value that could be:
+String, Boolean, Int, Float, List or Object.
+"""
+scalar GenericScalar

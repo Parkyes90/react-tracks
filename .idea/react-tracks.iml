@@ -16,7 +16,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (react-tracks-OWc7d-Xd)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Pipenv (react-tracks)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/enzyme" level="application" />
     <orderEntry type="library" name="@types/expo" level="application" />
